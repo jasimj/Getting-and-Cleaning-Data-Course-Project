@@ -36,7 +36,7 @@ featureTrain <- read.table("UCI HAR Dataset/train/X_train.txt", header = FALSE)
 subjectTrain <- read.table("UCI HAR Dataset/train/subject_train.txt", header = FALSE)
 
 #3. Merge the Data
-Subject <- rbind(subjectTest, subjectTrain)
+Subject <- rbind(subjectTest,subjectTrain)
 Activity <- rbind(activityTest, activityTrain)
 Feature <- rbind(featureTest, featureTrain)
 
